@@ -40,13 +40,12 @@ class Game
         @players[@current_player].add_score
       else
         @players[@current_player].lose_life
-        # p "#{@players[@current_player].name} has #{@players[@current_player].lives} lives left "
       end
       new_turn
       read_scores
     end
     
-    p "The game has ended"
+    puts "#{@players[@current_player].name} wins!"
   end
 
 end
